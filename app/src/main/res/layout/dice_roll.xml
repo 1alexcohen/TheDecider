@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fate.thedecider.DiceRoll"
+    android:background="@color/reg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/click_to_roll"
+            android:textSize="34sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/dice"
+            android:onClick="rollDice"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/result_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/result_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die2"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/result_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die3"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/result_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die4"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/result_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die5"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/result_text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/die6"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
